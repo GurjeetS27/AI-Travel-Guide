@@ -75,22 +75,5 @@ def ask_openai():
 
     return jsonify({"city": city, "question": question, "answer": answer})
 
-
-@app.route('/trending', methods=['POST'])
-def get_trending_places():
-    """
-    Returns the top trending places for a selected city.
-
-    Accepts:
-    - city (str): The city for which the user wants trending places.
-
-    Returns:
-    - JSON object with the city and a list of top places.
-    """
-    city = request.form.get("city", "Paris")
-    trending_places = TOP_PLACES.get(city, ["No data available"])
-    return jsonify({"city": city, "top_places": trending_places})
-
-
 if __name__ == '__main__':
     app.run(debug=True)
