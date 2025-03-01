@@ -2,3 +2,4 @@ Flask
 openai
 pymongo   # Only if using MongoDB
 gunicorn  # Required for deployment on Render
+python-dotenv # Required
