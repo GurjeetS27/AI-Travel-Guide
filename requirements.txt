@@ -1,0 +1,5 @@
+Flask
+openai
+pymongo   # Only if using MongoDB
+sqlite3   # Only if using SQLite
+gunicorn  # Required for deployment on Render

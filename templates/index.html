@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Guide</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🌍 AI Travel Guide</h2>
+
+        <label><b>Choose a City:</b></label>
+        <select id="city">
+            <option value="Nashville">Nashville</option>
+            <option value="Paris">Paris</option>
+            <option value="New York">New York</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="London">London</option>
+        </select>
+
+        <label><b>Ask a Travel Question:</b></label>
+        <input type="text" id="question" placeholder="e.g., Best hotel to stay in">
+        <button onclick="askAI()">Ask AI</button>
+        <button onclick="showTrending()">Show Trending Places</button>
+
+
+        <div id="response"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

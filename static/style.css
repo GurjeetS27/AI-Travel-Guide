@@ -1,0 +1,105 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/static/worldmap.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    animation: moveMap 60s linear infinite;
+}
+
+/* Moving Background Animation */
+@keyframes moveMap {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    text-align: center;
+    backdrop-filter: blur(10px);  /* Adds a glass-like effect */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Header */
+h2 {
+    color: #007bff;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Form Controls */
+select, input {
+    padding: 12px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 85%;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+select:focus, input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Response Box */
+#response {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in Animation for Response */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 20px;
+    }
+
+    select, input {
+        width: 100%;
+    }
+}
