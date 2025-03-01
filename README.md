@@ -13,7 +13,7 @@ An interactive AI-powered travel guide that provides **real-time travel recommen
 
 ## 📸 Live Demo
 
-🔗 **[Try it Live](https://your-deployed-link.com)**
+🔗 **[Try it Live](https://ai-travel-guide-2v1k.onrender.com)**
 
 ## 🛠️ Tech Stack
 
